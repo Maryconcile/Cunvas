@@ -1,0 +1,18 @@
+<canvas id="myCanvas" width="300" height="200" style="border:1px solid black;"></canvas>
+
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set the fill color to blue
+  ctx.fillStyle = 'blue';
+
+  // Begin a new path (to draw shapes)
+  ctx.beginPath();
+
+  // Draw a circle: arc(x, y, radius, startAngle, endAngle)
+  ctx.arc(150, 100, 50, 0, Math.PI * 2);
+
+  // Fill the circle with color
+  ctx.fill();
+</script>
